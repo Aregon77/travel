@@ -1,1 +1,98 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+/*****************  Nav  *********************/
+.nav__wrapper {
+  padding-top: 50px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.nav__wrapper nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__wrapper nav .logo img {
+  height: 50px;
+  width: 175px;
+}
+
+.nav__wrapper nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__wrapper nav .menu li:not(:last-child) {
+  margin-right: 65px;
+}
+
+.nav__wrapper nav .menu li #sign {
+  border: 3px solid #3984f3;
+  padding: 15px 45px;
+  color: #3984f3;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+}
+
+.nav__wrapper nav .menu li a {
+  font-size: 20px;
+  color: #bab8b8;
+  line-height: 0.73;
+  text-align: center;
+}
+
+.nav__wrapper nav .menu li a:hover {
+  color: #4497f3;
+}
+/*# sourceMappingURL=style.css.map */
