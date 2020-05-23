@@ -32,6 +32,28 @@ ul {
     list-style: none;
 }
 
+button {
+    cursor: pointer;
+
+    outline: none;
+}
+
+/*****************  BTN *********************/
+
+.btn {
+    font-size: 20px;
+
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 1.75;
+
+    padding: 18px 45px;
+
+    border: 0;
+
+    background-color: #3984f3;
+}
+
 /*****************  Nav  *********************/
 
 .nav__wrapper {
@@ -84,5 +106,59 @@ ul {
 
             }
         }
+    }
+}
+
+
+/*****************  Header  *********************/
+
+.header {
+    padding-top: 65px;
+    padding-bottom: 200px;
+
+}
+
+.header__intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.header__title {
+
+    h1 {
+        font-size: 75px;
+        color: rgb(9, 30, 64);
+        font-weight: 800;
+        line-height: 1.067;
+        text-align: left;
+
+        width: 100%;
+        max-width: 515px;
+
+        margin-bottom: 80px;
+    }
+
+    p {
+        font-size: 22px;
+
+        color: rgb(129, 133, 142);
+        line-height: 1.591;
+
+        text-align: left;
+
+        font-weight: 400;
+
+        width: 100%;
+        max-width: 470px;
+
+        margin-bottom: 95px;
+    }
+}
+
+.header__pict {
+    img {
+        transform: translateX(75px);
     }
 }

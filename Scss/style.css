@@ -32,6 +32,22 @@ ul {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+/*****************  BTN *********************/
+.btn {
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  line-height: 1.75;
+  padding: 18px 45px;
+  border: 0;
+  background-color: #3984f3;
+}
+
 /*****************  Nav  *********************/
 .nav__wrapper {
   padding-top: 50px;
@@ -94,5 +110,54 @@ ul {
 
 .nav__wrapper nav .menu li a:hover {
   color: #4497f3;
+}
+
+/*****************  Header  *********************/
+.header {
+  padding-top: 65px;
+  padding-bottom: 200px;
+}
+
+.header__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header__title h1 {
+  font-size: 75px;
+  color: #091e40;
+  font-weight: 800;
+  line-height: 1.067;
+  text-align: left;
+  width: 100%;
+  max-width: 515px;
+  margin-bottom: 80px;
+}
+
+.header__title p {
+  font-size: 22px;
+  color: #81858e;
+  line-height: 1.591;
+  text-align: left;
+  font-weight: 400;
+  width: 100%;
+  max-width: 470px;
+  margin-bottom: 95px;
+}
+
+.header__pict img {
+  -webkit-transform: translateX(75px);
+          transform: translateX(75px);
 }
 /*# sourceMappingURL=style.css.map */
