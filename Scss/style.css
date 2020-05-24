@@ -221,7 +221,28 @@ button {
   text-align: center;
 }
 
-.order__intro select {
+.order__intro .select__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.order__intro .select__form .btn--order {
+  width: 350px;
+  height: 70px;
+}
+
+.order__intro .select {
   position: relative;
 }
 
@@ -236,13 +257,16 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   outline: none;
   background-color: rgba(255, 255, 255, 0.2);
   width: 350px;
   height: 70px;
-  margin-right: 55px;
   border: none;
   cursor: pointer;
+  margin-right: 55px;
 }
 
 .order__intro .select__header .select__current {
@@ -251,7 +275,11 @@ button {
   font-weight: 700;
   line-height: 1.904;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 55px;
+}
+
+.order__intro .select__header span {
+  margin-right: 55px;
 }
 
 .order__intro .select__body {
@@ -271,10 +299,38 @@ button {
   font-weight: 700;
   line-height: 1.904;
   text-align: left;
-  padding-left: 10px;
+  padding: 10px;
+  padding-left: 55px;
 }
 
 .order__intro .select__body .select__item:hover {
   background-color: rgba(220, 220, 220, 0.69);
+}
+
+.order__intro .select__datepicker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 350px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+  margin-right: 55px;
+  color: white;
+  font-weight: 700;
+  line-height: 1.904;
+  text-align: left;
+  padding: 10px;
+  padding-left: 55px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 22px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -221,8 +221,21 @@ button {
     }
 
     //Select
-    select {
+    .select__form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .btn--order {
+            width: 350px;
+            height: 70px;
+        }
+    }
+
+    .select {
         position: relative;
+
     }
 
     .select.active .select__body {
@@ -233,15 +246,19 @@ button {
 
         display: flex;
         align-items: center;
+        justify-content: space-between;
+
 
         outline: none;
         background-color: rgba(255, 255, 255, 0.2);
         width: 350px;
         height: 70px;
-        margin-right: 55px;
+
         border: none;
 
         cursor: pointer;
+
+        margin-right: 55px;
 
         .select__current {
             font-size: 22px;
@@ -250,7 +267,12 @@ button {
             font-weight: 700;
             line-height: 1.904;
             text-align: left;
-            margin-left: 10px;
+
+            margin-left: 55px;
+        }
+
+        span {
+            margin-right: 55px;
         }
 
     }
@@ -276,11 +298,40 @@ button {
             font-weight: 700;
             line-height: 1.904;
             text-align: left;
-            padding-left: 10px;
+            padding: 10px;
+            padding-left: 55px;
 
             &:hover {
                 background-color: rgba(220, 220, 220, 0.69);
             }
         }
+    }
+
+    .select__datepicker {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        width: 350px;
+        height: 70px;
+
+        border: none;
+
+        cursor: pointer;
+
+        margin-right: 55px;
+
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        line-height: 1.904;
+        text-align: left;
+        padding: 10px;
+        padding-left: 55px;
+
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 22px;
     }
 }

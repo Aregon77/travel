@@ -2,7 +2,8 @@
 let select = function () {
 
     let selectHeader = document.querySelectorAll(".select__header");
-    let selectItem = document.querySelectorAll(".select__item");
+    let selectItem = document.querySelectorAll(".select__item"),
+        selectBody = document.querySelector(".select__body");
 
     selectHeader.forEach(function (item) {
 
@@ -15,6 +16,9 @@ let select = function () {
         item.addEventListener("click", selectChoose);
 
     });
+
+
+
 
     function selectToggle() {
         this.parentElement.classList.toggle("active");
@@ -30,8 +34,17 @@ let select = function () {
         select.classList.remove('active');
     }
 
+
 };
 
 select();
 
 // Select menu//
+
+//Datepicker
+
+$(function () {
+    $("#datepicker").datepicker({
+        minDate: new Date(2020, 1, 2)
+    });
+});
