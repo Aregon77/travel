@@ -109,13 +109,11 @@ button {
     }
 }
 
-
 /*****************  Header  *********************/
 
 .header {
     padding-top: 65px;
     padding-bottom: 200px;
-
 }
 
 .header__intro {
@@ -160,5 +158,129 @@ button {
 .header__pict {
     img {
         transform: translateX(75px);
+    }
+}
+
+/*****************  Order *********************/
+
+.order {
+    overflow: hidden;
+    background: url(../img/order/back.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+
+    &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        background-color: rgb(30, 61, 86);
+        opacity: 0.5;
+
+        z-index: 1;
+    }
+}
+
+.order__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 310px;
+    margin-bottom: 310px;
+
+    position: relative;
+    z-index: 2;
+
+    h2 {
+        font-size: 39px;
+        font-weight: 600;
+
+        text-transform: uppercase;
+        line-height: 1.238;
+        text-align: center;
+
+        margin-bottom: 15px;
+
+        color: rgb(255, 255, 255);
+    }
+
+    h3 {
+        font-size: 49px;
+
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        text-transform: capitalize;
+        line-height: 1.264;
+        text-align: center;
+    }
+
+    //Select
+    select {
+        position: relative;
+    }
+
+    .select.active .select__body {
+        display: block;
+    }
+
+    .select__header {
+
+        display: flex;
+        align-items: center;
+
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        width: 350px;
+        height: 70px;
+        margin-right: 55px;
+        border: none;
+
+        cursor: pointer;
+
+        .select__current {
+            font-size: 22px;
+
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            line-height: 1.904;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+    }
+
+    .select__body {
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        width: 350px;
+
+        margin-right: 55px;
+        border: none;
+
+        display: none;
+
+        cursor: pointer;
+
+        position: absolute;
+
+        .select__item {
+            font-size: 22px;
+
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            line-height: 1.904;
+            text-align: left;
+            padding-left: 10px;
+
+            &:hover {
+                background-color: rgba(220, 220, 220, 0.69);
+            }
+        }
     }
 }
