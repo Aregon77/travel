@@ -346,3 +346,70 @@ button {
         }
     }
 }
+
+//Footer
+.footer {
+    text-align: center;
+    padding-top: 100px;
+
+    .footer__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        a {
+            font-size: 18px;
+
+            color: rgb(43, 50, 58);
+            line-height: 2.769;
+
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+
+            &:hover {
+                color: rgb(68, 151, 243);
+            }
+        }
+    }
+
+    .footer__copyright {
+        padding-bottom: 25px;
+
+        p {
+            font-size: 15px;
+            color: rgb(43, 50, 58);
+            font-weight: 700;
+            line-height: 2;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            span {
+                color: rgb(198, 198, 198);
+                margin-left: 10px;
+            }
+
+        }
+
+    }
+
+    .footer__social {
+        a {
+            fiil: #3984f3;
+
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+
+            svg {
+                width: 47px;
+                height: 47px;
+                fill: #3984f3;
+            }
+        }
+    }
+}
